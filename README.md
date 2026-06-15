@@ -121,15 +121,15 @@ This project demonstrates how raw retail data can be transformed into a **decisi
 
 ## Executive Summary Dashboard
 
-![Executive Summary](screenshots/executive_summary.png.png)
+
 
 ## Regional Analysis Dashboard
 
-![Regional Analysis](screenshots/regional_analysis.png.png)
+
 
 ## Product Analysis Dashboard
 
-![Product Analysis](screenshots/product_analysis.png.png)
+
 
 ---
 
