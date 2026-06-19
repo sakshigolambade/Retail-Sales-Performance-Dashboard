@@ -1,143 +1,55 @@
-# 📊 Retail Sales Performance Dashboard
+# 📊Retail Sales Analysis Dashboard
 
-A **Power BI + Excel analytics project** that transforms raw retail transaction data into actionable business insights through interactive dashboards, data modeling, and DAX-driven KPIs.
+An interactive Power BI dashboard built on the Global Superstore dataset, analyzing sales, profit, and customer performance across regions, markets, and product categories — with built-in time-intelligence forecasting.
 
----
+## 🎯Overview
 
-## 🚀 Project Overview
+This project transforms raw retail order data into a 5-page interactive dashboard designed to help business stakeholders quickly identify sales trends, profitability gaps, top customers, and seasonal patterns.
 
-This project focuses on analyzing **12 months of retail sales data (~15,000 records)** that was originally scattered across multiple Excel sheets with inconsistent formatting.
+## 🛠️Tools Used
 
-The goal was to transform messy, disconnected data into a unified dashboard that clearly shows revenue trends, product performance, and regional insights.
+- **Power BI Desktop** — data modeling, DAX measures, visualization
+- **DAX** — calculated measures (YTD, YoY comparisons, forecasting)
+- **Power Query** — data cleaning and transformation
 
----
+## 📁Dashboard Pages
 
-## ❗ Problem Statement
+**1️⃣ Executive Summary Dashboard**
+- Profit by category, monthly sales & profit trends
+- Sales by market and country (map visual)
+- Sales breakdown by sub-category and market
 
-- Data spread across multiple Excel sheets with inconsistent structure  
-- No unified view of revenue trends or KPIs  
-- Difficulty identifying top products and weak regions  
-- No self-serve reporting system for business users  
+**2️⃣ Product Performance**
+- Total profit by segment, sales by sub-category
+- Top products by sales (ranked)
+- Sales vs. profit scatter analysis by sub-category
 
-💡 Result: Decision-making was slow and not data-driven.
+**3️⃣ Customer Analysis**
+- Customer segmentation and YTD sales
+- Top customers by average sales and by profit
+- Monthly customer trends
 
----
+**4️⃣ Time Intelligence**
+- Sales & profit forecasting (predictive trend lines)
+- YTD vs. YTD Last Year comparison
+- Decomposition tree for root-cause analysis
+- Regional sales treemap; sales & profit ribbon chart by market
 
-## 🧹 Data Cleaning & Preparation (Excel)
-
-- Removed duplicate transaction IDs  
-- Fixed inconsistent date formats  
-- Handled missing product categories using product codes  
-- Standardized column structure across all sheets  
-
-
-
----
-
-## 🧠 Data Modeling (Power BI)
-
-Built a **Star Schema**:
-
-- Fact Table: Sales Transactions  
-- Dimension Tables:
-  - Products  
-  - Customers  
-  - Regions  
-  - Date Table (`CALENDAR()` in DAX)
-
-This improved performance and made analysis scalable.
-
----
-
-## 📐 DAX Measures
-
-Key KPIs created:
-
-- 💰 Total Revenue  
-- 📈 Month-over-Month Growth  
-- 📊 Quarter-over-Quarter Growth  
-- 🏷️ Category-wise Revenue Share  
-- 📉 Year-over-Year Growth (`CALCULATE()` + `SAMEPERIODLASTYEAR()`)
-
----
-
-## 📊 Dashboard Pages
-
-### 1. Executive Summary
-- Key KPIs: Revenue, Growth, Trends  
-- High-level business snapshot  
-
-### 2. Regional Analysis
-- Map visuals for geographic insights  
-- Regional performance comparison  
-- Identification of weak vs strong regions  
-
-### 3. Product Category Analysis
-- Category performance breakdown  
-- Trend analysis over time  
-- Revenue contribution by segment  
-
----
-
-## 🎛️ Interactivity
-
-- Region slicer  
-- Category slicer  
-- Monthly filters  
-
-👉 Enables self-service analytics for users.
-
----
+**5️⃣ Tooltip Page**
+- Custom hover tooltip showing regional sales breakdown
 
 ## 🔍 Key Insights
+- **APAC** was the highest-performing market by sales (~$3.59M), followed by EU (~$2.94M) and US (~$2.30M)
+- **Technology** had the strongest profit margin (~14%) among categories, while **Furniture** lagged at just ~7% despite generating $4.1M in sales
+- **Tables** stood out as a high-sales, negative-margin sub-category ($757K in sales but a **-8% margin**, i.e. a net loss) — a clear pricing/discount risk area
+- Year-over-year sales grew consistently from 2011 to 2014 (from ~$2.26M to ~$4.30M), and the forecast model projects this **upward trend continuing**
 
-- 📌 Electronics sales spike ~ more than 40% in Q4 (seasonal demand)  
-- 📌 South region consistently underperforms vs North & West  
-- 📌 Revenue is unevenly distributed across categories  
+## 🚀 How to Use
+1. Download `Global_Superstore.pbix`
+2. Open in Power BI Desktop (free download from Microsoft)
+3. Use slicers on each page to filter by region, segment, category, or date
 
----
+## 📂 Dataset
+[Global Superstore](https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset) — a widely-used retail dataset containing order-level sales, profit, and customer data across global markets.
 
-## 📚 Key Learnings
-
-- Data cleaning is the most important step in analytics  
-- Proper data modeling improves performance significantly  
-- Dashboard design should focus on clarity, not complexity  
-- Users understand insights within 30 seconds or they ignore it  
-
----
-
-## 🛠️ Tools Used
-
-- Power BI  
-- Microsoft Excel  
-- DAX  
-- Data Modeling (Star Schema)
-
----
-
-## 📌 Outcome
-
-This project demonstrates how raw retail data can be transformed into a **decision-making tool** using analytics and visualization. It highlights both technical and business thinking skills.
-
-## Executive Summary Dashboard
-
-
-
-## Regional Analysis Dashboard
-
-
-
-## Product Analysis Dashboard
-
-
-
----
-
-## 👩‍💻 Author
-**Sakshi Golambade** 
-
-Data Analyst
-
-
-
----
+⭐ *If you found this project useful, feel free to star the repo!*
